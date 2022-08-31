@@ -4,7 +4,9 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+Para rodar o projeto angular utilizar o comando ng serve na raiz do projeto.
+
+Para rodar a api que disponibila os endpoints utilizar o comando json-server --watch db.json na raiza da pasta api dentro do projeto front.
 
 ## Code scaffolding
 
