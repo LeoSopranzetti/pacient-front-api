@@ -4,7 +4,7 @@ O projeto foi criado com o angular cli na versão 14. [Angular CLI](https://gith
 
 ## Development server
 
-Para rodar o projeto angular utilizar o comando ng serve na raiz do projeto.
+Para rodar o projeto angular utilizar o comando "ng serve" na raiz do projeto.
 
-Para rodar a api que disponibila os endpoints utilizar o comando json-server --watch db.json na raiza da pasta api dentro do projeto front.
+Para rodar a api que disponibila os endpoints utilizar o comando "json-server --watch db.json" na raiza da pasta api dentro do projeto front.
 
