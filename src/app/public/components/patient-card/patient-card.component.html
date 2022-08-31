@@ -1,0 +1,63 @@
+
+<div class="wrapper fade-in">
+
+  <div class="card col-12 col-lg-7 col-sm-12">
+
+    <div class="col-12 img-wrapper" >
+      <img *ngIf="patient.gender !== 'Mulher'" class="col-4 col-lg-2 col-sm-4" src="../../../../assets/img/man.png" alt="">
+      <img *ngIf="patient.gender === 'Mulher'" class="col-4 col-lg-2 col-sm-4" src="../../../../assets/img/woman.png" alt="">
+    </div>
+
+    <div class="item col-12 col-lg-12 col-sm-12 p-l-0">
+      <p class="restaurant-name text-center m-b-0">{{patient.nick}}</p>
+      <p class="description text-center p-t-0">{{patient.federalId}}</p>
+    </div>
+
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faCakeCandles"></fa-icon> Nascimento</p>
+      <p class="sub-title">{{patient.birthdate}}</p>
+    </div>
+
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faPhone"></fa-icon> Telefone</p>
+      <p class="sub-title">{{patient.phone}}</p>
+    </div>
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faUser"></fa-icon> Mãe:</p>
+      <p class="sub-title">{{patient.mother}}</p>
+    </div>
+
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faPersonHalfDress"></fa-icon> Gênero</p>
+      <p class="sub-title">{{patient.gender}}</p>
+    </div>
+
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faCity"></fa-icon> Cidade</p>
+      <p class="sub-title">{{patient.city}}</p>
+    </div>
+
+    <div class="item col-6 col-lg-4 col-sm-6">
+      <p class="title"><fa-icon class="icon" [icon]="faUser"></fa-icon>  Pai</p>
+      <p class="sub-title">{{patient.father}}</p>
+    </div>
+
+
+    <div class="item col-12 col-lg-12 col-sm-12 p-l-0">
+      <p class="title text-center"><fa-icon class="icon" [icon]="faSignature"></fa-icon> Nome Completo</p>
+      <p class="sub-title text-center">{{patient.name}}</p>
+    </div>
+
+    <div class="button col-12 col-lg-12 col-sm-12">
+      <div class="col-6 text-center">
+        <button *ngIf="!isDetails" (click)="goToDetails(patient)" class="col-5 btn btn-primary">Detalhes</button>
+        <button *ngIf="isDetails" (click)="goToHome()" class="col-5 btn btn-primary">Home</button>
+        <button  (click)="onDelete(patient)" class="col-5 btn btn-danger">Excluir</button>
+      </div>
+
+    </div>
+
+
+  </div>
+</div>
+

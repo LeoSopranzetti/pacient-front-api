@@ -1,0 +1,22 @@
+.container{
+  padding-bottom: 50px;
+
+  .img-nurses{
+    display: flex;
+    margin-bottom: -25px;
+    justify-content: end;
+    align-items: center;
+  }
+
+  .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+  }
+
+  .main-card{
+    display: flex;
+    align-content: row;
+  }
+}

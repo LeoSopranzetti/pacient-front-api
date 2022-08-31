@@ -1,0 +1,72 @@
+<div>
+
+    <div class="col-12 col-lg-12 col-sm-12">
+
+      <h1 class="title">Adicione um novo paciente</h1>
+      <p class="sub-title">Informe os dados pessoais!</p>
+
+      <form [formGroup]="newPatient" class="form col-lg-12 col-sm-12 ">
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12 p-r-20">
+          <label class="m-b-5 label" for="login">Nome</label>
+          <input formControlName="nick" type="text" class="form-control" name="nick" id="">
+          <p class="error" *ngIf="newPatient.get('nick')?.errors?.['required'] && newPatient.get('nick')?.touched">Nome obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12">
+          <label class="m-b-5 label" for="login">Nome Completo</label>
+          <input formControlName="name" type="text" class="form-control" name="name" id="">
+          <p class="error" *ngIf="newPatient.get('name')?.errors?.['required'] && newPatient.get('name')?.touched">Nome completo obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12 p-r-20">
+          <label class="m-b-5 label" for="login">CPF</label>
+          <input formControlName="federalId" type="text" class="form-control" name="federalId" id="">
+          <p class="error" *ngIf="newPatient.get('federalId')?.errors?.['required'] && newPatient.get('federalId')?.touched">CPF obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12">
+          <label class="m-b-5 label" for="login">Data de nascimento</label>
+          <input formControlName="birthdate" type="text" class="form-control" name="birthdate" id="">
+          <p class="error" *ngIf="newPatient.get('birthdate')?.errors?.['required'] && newPatient.get('birthdate')?.touched">Data de nascimento obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12 p-r-20">
+          <label class="m-b-5 label" for="login">Gênero</label>
+          <input formControlName="gender" type="text" class="form-control" name="gender" id="">
+          <p class="error" *ngIf="newPatient.get('gender')?.errors?.['required'] && newPatient.get('gender')?.touched">Gênero obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12">
+          <label class="m-b-5 label" for="login">Nome da mãe</label>
+          <input formControlName="mother" type="text" class="form-control" name="mother" id="">
+          <p class="error" *ngIf="newPatient.get('mother')?.errors?.['required'] && newPatient.get('mother')?.touched">Nome da mãe obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12 p-r-20">
+          <label class="m-b-5 label" for="login">Nome do pai</label>
+          <input formControlName="father" type="text" class="form-control" name="father" id="">
+          <p class="error" *ngIf="newPatient.get('father')?.errors?.['required'] && newPatient.get('father')?.touched">Nome do pai obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-10 col-12 col-lg-6 col-sm-12">
+          <label class="m-b-5 label" for="login">Telefone</label>
+          <input formControlName="phone" type="text" class="form-control" name="phone" id="">
+          <p class="error" *ngIf="newPatient.get('phone')?.errors?.['required'] && newPatient.get('phone')?.touched">Telefone obrigatório</p>
+        </div>
+
+        <div class="form-group text-center m-b-20 col-12 col-lg-6 col-sm-12">
+          <label class="m-b-5 label" for="login">Cidade</label>
+          <input formControlName="city" type="text" class="form-control" name="city" id="">
+          <p class="error" *ngIf="newPatient.get('city')?.errors?.['required'] && newPatient.get('city')?.touched">Cidade obrigatório</p>
+        </div>
+
+
+        <button (click)="onClick(true)" [disabled]="newPatient.invalid" class="btn btn-primary col-12 col-lg-8 col-sm-12 m-b-20">Acessar</button>
+
+        <button (click)="onClick(false)" class="btn btn-secondary col-12 col-lg-8 col-sm-12 m-b-20">Fechar</button>
+
+      </form>
+
+    </div>
+</div>

@@ -1,0 +1,85 @@
+.wrapper{
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin-top: 35px;
+
+  .card {
+    display: flex;
+    flex-flow: row wrap;
+    padding-bottom: 30px;
+
+    .item{
+      margin-bottom: 10px;
+      display: flex;
+      flex-direction: column;
+      padding-left: 35px;
+      padding-top: 10px;
+
+      .restaurant-name{
+        color: var(--colorPrimary);
+        color: var(--colorTitle);
+        font-family: 'Lobster', cursive;
+        font-size: 25px;
+      }
+
+      .description{
+        color: var(--colorPrimary);
+        color: var(--colorSubtitle);
+        font-size: 15px;
+      }
+
+      .title{
+        margin-bottom: 0;
+        color: var(--colorTitle);
+        font-weight: bold;
+      }
+
+      .sub-title{
+        color: var(--colorSubtitle);
+        margin-bottom: 0;
+
+      }
+
+    }
+
+  }
+
+  .img-wrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+
+    img{
+      border-radius: 100%;
+    }
+  }
+
+  .button{
+    display: flex;
+    justify-content: center;
+    .btn-danger {
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 5px;
+    }
+    .btn-primary{
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-right: 5px;
+    }
+  }
+
+}
+
+.m-b-0{
+  margin-bottom: 0 !important;
+}
+
+.p-t-0{
+  padding-top: 0 !important;
+}
+
+.p-l-0{
+  padding-left: 0 !important;
+}

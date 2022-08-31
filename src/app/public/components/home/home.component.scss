@@ -1,0 +1,61 @@
+
+.container{
+  padding-bottom: 50px;
+
+  .img-doctor{
+    display: flex;
+    justify-content: center;
+  }
+
+  .search-input{
+    display: flex;
+    justify-content: center;
+
+    .m-t-45{
+      margin-top: 45px;
+    }
+
+    .input-wrapper{
+      position: relative;
+      .icon{
+        position: absolute;
+        top: 8px;
+        left: 400px;
+        color: var(--colorIcon) !important;
+      }
+    }
+  }
+
+  .not-found{
+    margin-top: 45px;
+
+    display: flex;
+    justify-content: center;
+
+    .card{
+      padding: 30px;
+
+      img{
+        max-height: 250px;
+      }
+      .error-text{
+        text-align: center;
+        margin-bottom: 0;
+        color: var(--colorPrimary);
+        color: var(--colorSubtitle);
+        font-size: 18px;
+        margin-top: 20px;
+      }
+    }
+
+  }
+
+
+}
+
+@media screen and (max-width: 575px){
+  .icon{
+    left: 350px !important;
+  }
+}
+
